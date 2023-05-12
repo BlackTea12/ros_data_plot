@@ -1,0 +1,7 @@
+<launch>
+    <arg name="launch_folder_path" value="$(find data_plot)"/>
+    <param name="rosbag_path_dir" value="$(arg launch_folder_path)/rosbag"/>
+    <param name="img_path_dir" value="$(arg launch_folder_path)/img"/>
+    <param name="rosbag_name" value="test02.bag"/>
+    <node pkg="data_plot" type="plot.py" name="data_plot" output="screen"/>
+</launch>
