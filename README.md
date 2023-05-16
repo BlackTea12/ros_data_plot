@@ -7,7 +7,7 @@ In your command prompt,
 rosbag record {your_topic_name}
 `
 
-## How to plot your data
+## How to plot your data (plot.py)
 In this script, two messages are used for plot.
 Both type are **'std_msgs/Float64'** and **'nav_msgs/Odometry'**.
 
