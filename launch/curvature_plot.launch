@@ -1,0 +1,7 @@
+<launch>
+    <arg name="launch_folder_path" value="$(find data_plot)"/>
+    <param name="rosbag_path_dir" value="$(arg launch_folder_path)/rosbag"/>
+    <param name="img_path_dir" value="$(arg launch_folder_path)/img"/>
+    <param name="rosbag_name" value="qd_curvature_record.bag"/>
+    <node pkg="data_plot" type="curvature.py" name="curvature_plot" output="screen"/>
+</launch>
