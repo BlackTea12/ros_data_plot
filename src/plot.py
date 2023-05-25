@@ -75,7 +75,7 @@ if __name__ == '__main__':
 
     # Adjust the layout of the subplots
     plt.legend(loc='best')
-
+    fig.tight_layout()
     # Save the plot as an image file
     img_name = rosbag_name.split('.')
     img_name = img_name[0].split('/')
